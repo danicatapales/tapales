@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    border-color: white;
+    background-image: url(Images/Pink\ aesthetic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+.header {
+    background-color: rgba(43, 43, 43, 0.5);
+    padding: 30px;
+    text-align: center;
+    opacity: 1;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #fff;
+    opacity: 1;
+}
+
+.navbar {
+    background-color: #333;
+    opacity: 0.8;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.introduction {
+    padding: 20px;
+    text-align: center;
+    color: rgb(158, 50, 50);
+}
+
+.timeline {
+    padding: 40px;
+    margin-top: 40px;
+    
+}
+
+.event {
+    background-color: rgba(3, 128, 185, 0.5);
+    opacity: 1;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    transform: translateX(-100%); /* Slide in from the left */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.event.visible {
+    opacity: 1;
+    transform: translateX(0); /* Reset position */
+}
+
+.event img, .event video {
+    max-width: 50%;
+    display:inherit;
+    margin: 10px auto;
+    border-radius: 8px;
+    opacity: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(43, 43, 43, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    box-sizing: border-box;
+}
+.header-image{
+    height: 100px;
+    opacity: 1;
+}
+
+.translucent-text {
+  opacity: 1; /* 100% opaque */
+  color: white;
+}
+
+.event-text{
+    opacity: 1;
+}
+.introduction p{
+    font-size: 30px;
+}
+.introduction h2{
+    font-size: 40px;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.event {
+    opacity: 0;
+    animation: slideIn 2.0s ease-out forwards;
+    animation-delay: 0.5s;
+    
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>
+           
+    </header>
+
+    <!-- Navigation Links -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="home" class="introduction">
+        
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        
+        <div class="event">
+            <p>first day opening</p>
+            <img src="333.png" alt="Morning" height="200px"/>
+
+        </div>
+
+        <div class="event">
+            <p>"College days, best days."</p>
+            <img src="111.png" alt="morning event" height="200px">
+        </div>
+
+        <div class="event">
+            <p>"Moments that matter."</p>
+            <img src="222.png" alt="a boy and a girl" height="200px"/>
+        </div>
+
+        
+        <div class="event">
+            <p>opening day</p>
+            <img src="333.png" alt="People taking a photo" height="200px"/>
+           
+        </div>
+    </section>
+
+    
+    </footer>
+</body>
+</html>
